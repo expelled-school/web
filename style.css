@@ -1,3 +1,5 @@
+@media (min-width: 1220px) { 
+
 @keyframes header-in {
     0%{margin-top: -101vh;}
     50%{margin-top:-101vh}
@@ -8,6 +10,9 @@
     padding: 0;
     text-decoration: none;
 }
+.mobile {
+    display: none;
+}
 header {
     background: url("img/header.jpg");
     height: 100vh;
@@ -15,6 +20,9 @@ header {
     background-size: cover;
 }
 .header-in {
+    display: flex;
+    flex-direction: column;
+
     height: 100%;
     width: 100%;
     position: absolute;
@@ -23,8 +31,11 @@ header {
 }
 .header-top {
     padding: 25px;
+    background: linear-gradient(black,rgba(0,0,0,0));
 }
 .logo {
+    display: flex;
+    align-items: center;
     color: white;
     font-size: xx-large;
 }
@@ -33,29 +44,132 @@ header {
 }
 .logo-desc {
     font-size: large;
+    margin-left: 4px;
+    align-self: start;
+}
+.header-social {
+    align-items: center;
+    justify-content: center;
 }
 .discord {
     display: flex;
     align-items: center;
     color: white;
     font-size: x-large;
+    padding: 10px 20px;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(255, 217, 0, 0.5);
+    border-radius: 30px;
 }
 .discord img{
     margin-right: 5px;
     height: 30px;
     filter: invert(100%);
+    
 }
 .discord:hover {
     color: white;
     text-decoration: none;
+    border-radius: 0;
+    box-shadow: 0 0 0;
+    background: rgba(255,255,255,0.3);
+    transition: 0.3s;
 }
 
+.logo-img {
+    height: 300px;
+    position: absolute;
+}
 
-.social {
+.header-menu {
     display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 100px;
+    padding-left: 100px;
+}
+.header-menu-left, .header-menu-right  {
+    display: flex;
+
     align-items: center;
+    width: 40%;
 }
-.social img {
-    height: 25px;
-    width: 100px;
+
+.header-menu-left-text {
+    display: flex;
+    flex-direction: column;
 }
+.header-menu-left-a {
+    font-size: 30px;
+    line-height: 22px;
+    color: white;
+    margin: 10px 0 10px 150px;
+    border-bottom: wheat 4px solid;
+    background: rgba(255,255,255,0.3);
+    padding: 10px 20px 0 160px;
+    transition: 0.3s;
+    border-bottom: rgba(255, 255, 255, 0.37) 4px solid;
+}
+.header-menu-left-a:hover {
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+    transition: 0.2s;
+    padding: 20px 20px 10px 160px;
+    margin: 0 0 0 150px;
+    background: rgba(255, 255, 255, 0.92);
+    border-bottom: rgba(255, 217, 0.8) 4px solid;
+}
+.header-menu-left-a-center:hover {
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+    transition: 0.2s;
+    padding: 20px 20px 10px 190px;
+    margin: 0 0 0 150px;
+    background: rgba(255, 255, 255, 0.92);
+    border-bottom: rgba(255, 217, 0.8) 4px solid;
+}
+.header-menu-left-a:hover span, .header-menu-left-a-center:hover span{
+    color: rgb(47, 47, 47);
+}
+.header-menu-left-a span, .header-menu-left-a-center span {
+    font-size: 15px;
+    color: rgb(255, 217, 0);
+}
+.header-menu-left-a-center {
+    transition: 0.3s;
+    font-size: 30px;
+    line-height: 22px;
+    color: white;
+    border-bottom: rgba(255, 255, 255, 0.37) 4px solid;
+    background: rgba(255,255,255,0.3);
+    padding: 10px 20px 0px 190px;
+    margin: 10px 0 10px 150px;
+
+}
+
+
+@media (max-width: 1221px) {
+    * {
+        font-size: 0;
+        
+    }
+    body {
+        display: block;
+        height: 100vh;
+        width: 100%;
+        background: url("img/header.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile {
+        margin-top: 20%;
+        padding: 20px;
+        
+        display: block;
+        color: white;
+        font-size: xx-large;
+    }
+} 
