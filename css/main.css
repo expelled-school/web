@@ -96,8 +96,13 @@ body {
         padding: 30px;
         margin: 0 0 80px 0;
         text-align: left;
-        
-
     }
-
+    .carousel-caption h3 {
+        font-size: 1.17em;
+    }
+    .carousel-caption li {
+        white-space: normal;
+    }
+        
+        
 }
