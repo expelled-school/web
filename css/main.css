@@ -1,0 +1,84 @@
+nav {
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 15px rgba(0,0,0,0.9);
+}
+header {
+
+}
+body {
+    background: black;
+    margin: 0;
+    padding: 0;
+}
+.navbar-toggler {
+    background: url("../img/icons/bars-solid.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    filter: invert(100%);
+}
+.navbar-toggler:hover {
+    filter: invert(90%);
+}
+.color-white {
+    color: white;
+}
+.color-theme {
+    color: #F5C725;
+}
+.color-theme-second {
+    color: #A811A8;
+}
+.carousel {
+    width: 100%;
+}
+.carousel-inner {
+    width: 100%;
+}
+.carousel-item-1 {
+    background: url("../img/carousel-1.jpg");
+    
+}
+.carousel-item-2 {
+    background: url("../img/carousel-2.jpg");
+}
+.carousel-item-3 {
+    background: blue;
+}
+.carousel-item {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-button {
+    background: chartreuse;
+    height: 200px;
+}
+.carousel-caption {
+    display: block;
+    background: rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+    margin-bottom: 80px;
+    cursor: pointer;
+    width: min-content;
+    white-space: nowrap;
+    padding: 30px;
+    margin: auto;
+    text-align: left;
+}
+.carousel-caption h3{
+    margin-bottom: 20px;
+}
+.carousel-caption:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-decoration: none;
+    
+}
+.carousel-caption:active {
+    color: #F5C725;
+}
