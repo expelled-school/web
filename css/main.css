@@ -51,22 +51,19 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 0;
 }
 
-.carousel-button {
-    background: chartreuse;
-    height: 200px;
-}
+
 .carousel-caption {
     display: block;
     background: rgba(0, 0, 0, 0.8);
     transition: 0.3s;
-    margin-bottom: 80px;
     cursor: pointer;
     width: min-content;
     white-space: nowrap;
     padding: 30px;
-    margin: auto;
+    margin: 0 auto 80px auto;
     text-align: left;
 }
 .carousel-caption h3{
@@ -81,4 +78,17 @@ body {
 }
 .carousel-caption:active {
     color: #F5C725;
+}
+.carousel-control-prev {
+    position: absolute;
+}
+
+@media (max-width: 1000px) {
+    .carousel-caption {
+        left: 0;
+        width: 100%;
+        
+
+    }
+
 }
