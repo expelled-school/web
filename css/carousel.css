@@ -49,3 +49,37 @@
 .carousel-control-prev {
     position: absolute;
 }
+
+@media (min-width: 1000px) {
+     
+    .carousel-caption {
+        width: 50%;
+    
+    
+    }
+    
+}
+
+@media (max-width: 1000px) {
+   
+    .carousel-caption {
+        left: 0;
+        width: 100%;
+        display: block;
+        background: rgba(0, 0, 0, 0.8);
+        transition: 0.3s;
+        cursor: pointer;
+        white-space: nowrap;
+        padding: 30px;
+        margin: 0 0 0 0;
+        text-align: left;
+    }
+    .carousel-caption h3 {
+        font-size: 1.17em;
+    }
+    .carousel-caption li {
+        white-space: normal;
+    } 
+   
+        
+}
