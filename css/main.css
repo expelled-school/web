@@ -1,11 +1,6 @@
-/* unsorted css below *//
-
 nav {
     background: rgba(0, 0, 0, 0.9);
     box-shadow: 0 0 15px rgba(0,0,0,0.9);
-}
-header {
-
 }
 body {
 
@@ -102,7 +97,7 @@ body {
 }
 
 
-
+}
 
 }
 
@@ -110,28 +105,4 @@ body {
 
 
 
-
-@media (max-width: 1000px) {
-   
-    .carousel-caption {
-        left: 0;
-        width: 100%;
-        display: block;
-        background: rgba(0, 0, 0, 0.8);
-        transition: 0.3s;
-        cursor: pointer;
-        white-space: nowrap;
-        padding: 30px;
-        margin: 0 0 0 0;
-        text-align: left;
-    }
-    .carousel-caption h3 {
-        font-size: 1.17em;
-    }
-    .carousel-caption li {
-        white-space: normal;
-    } 
-   
-        
-}
 
