@@ -7,10 +7,12 @@
         <link rel="stylesheet" href="bootstrap-4-0/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/carousel.css">
-
+        <link rel="stylesheet" href="css/alert.css">
         <title>Expelled</title>
     </head>
     <body class="bgcolor-white">
+        
+
         <header>
             <nav class="navbar navbar-expand-lg fixed-top">
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-nav-main">
@@ -24,7 +26,9 @@
                     <a class="nav-link color-white" href="#">Онлайн курсы</a>
                     <a class="nav-link color-white" href="#">О нас</a>
                 </div>
+                
             </nav>
+            
             <div class="carousel slide" data-ride="carousel" id="header-carousel">
                 <ol class="carousel-indicators">
                     <li data-target="header-carousel" data-slide-to="0" class="active"></li>
@@ -80,7 +84,7 @@
             </div>
         </header>
         <div class="container-fluid section-preview">
-            <div class="row justify-content-center bgcolor-white lg-px-50">
+            <div class="row justify-content-center bgcolor-white lg-px-50 color-darkgray">
                 <div class="col-12 col-lg-4 preview-card">
                     <img class="inner-image" src="img/filler-1x1.png" alt="">
                     <h3>вареники с сыром</h3>
@@ -105,46 +109,53 @@
             </div>
         </div>
         <div class="container section-picker bgcolor-white">
-            <div class="row picker">
+            <div class="row picker color-darkgray">
                 <div class="col-12 col-lg-4">
                     <button class="picker-btn picker-btn picker-btn-active">
-                        <h4>1</h4>
+                        <h4>Уровень 1</h4>
                     </button>
                     <button class="picker-btn">
-                        <h4>1</h4>
+                        <h4>Уровень 2</h4>
                     </button>
                     <button class="picker-btn">
-                        <h4>1</h4>
+                        <h4>Уровень 3</h4>
                     </button>
                     <button class="picker-btn">
-                        <h4>1</h4>
+                        <h4>Уровень 4</h4>
                     </button>
                     
                 </div>
                 <div class="col-12 col-lg-8">
                     <div class="picker-data picker-data-active">
-                        Не следует, однако забывать, что sdgdsукрепление и развитие структуры позволяет оценить значение систем массового участия. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль 
+                        <p class="bgcolor-white">Не следует, однако забывать, что sdgdsукрепление и развитие структуры позволяет оценить значение систем массового участия. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль </p>
                     </div>
                     <div class="picker-data">
-                        Не следует, однако забывать, что укреплеdsgние и развитие структуры позволяет оценить значение систем массового участия. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль 
+                        <p class="bgcolor-white">Не следует, однако забывать, что укреплеdsgние и развитие структуры позволяет оценить значение систем массового участия. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль</p> 
                     </div>
                     <div class="picker-data">
-                        Не следует, однако забывать, что укреплdsgsdение и развитие структуры позволяет оценить значение систем массового участия. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль 
+                        <p class="bgcolor-white">Не следует, однако забывать, что укреплdsgsdение и развитие структуры позволяет оценить значение систем массового участия. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль</p> 
                     </div>
                     <div class="picker-data">
-                        Не следует, однако забdsgывать, что укрепление и развитие структуры позволяет оценить значение систем массового участия. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль 
+                        <p class="bgcolor-white">Не следует, однако забdsgывать, что укрепление и развитие структуры позволяет оценить значение систем массового участия. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль</p> 
                     </div>
                 </div>
             </div>
         </div>
         
-
-ghvug
+sadas
+        <div class="alert alert-warning" role="alert">
+            С 10 марта 2021 курсы веб-разработчика приостановлены и временно недоступны
+            <button type="button" class="btn btn-dark" id="alert-btn">Ясно</button>
+        </div>
         <script src="bootstrap-4-0/jquery-3.2.1.slim.min.js"></script>
         <script src="bootstrap-4-0/popper.min.js"></script>
         <script src="bootstrap-4-0/bootstrap.min.js"></script>
-        <script src="js/picker.js">
-        
+        <script src="js/picker.js"></script>
+        <script>
+            document.getElementById("alert-btn").onclick = function() {
+                document.getElementsByClassName("alert")[0].style.animation = "alert-hide 2s";
+                document.getElementsByClassName("alert")[0].style.bottom = "-500px";
+            }
         </script>
     </body>
 </html>
