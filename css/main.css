@@ -1,3 +1,5 @@
+/* unsorted css below *//
+
 nav {
     background: rgba(0, 0, 0, 0.9);
     box-shadow: 0 0 15px rgba(0,0,0,0.9);
@@ -6,7 +8,7 @@ header {
 
 }
 body {
-    background: black;
+
     margin: 0;
     padding: 0;
 }
@@ -20,6 +22,61 @@ body {
 .navbar-toggler:hover {
     filter: invert(90%);
 }
+
+
+
+.inner-image {
+    width: 100%;
+    padding: 50px;
+}
+.preview-card {
+    padding: 20px;
+}
+
+
+
+.picker {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+.picker > div {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.picker-btn {
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+.picker-btn:focus {
+    outline: none;
+}
+.picker-btn:hover {
+    background-color: #f5c82596;
+}
+
+.picker-btn-active {
+    background-color: #F5C725;
+    transition: 0.1s;
+}
+.picker-btn-active:hover {
+    background-color: #F5C725;
+    
+}
+.picker-data {
+    display: none;
+    position: absolute;
+    height: 100%;
+    background-color: white;
+    padding: 10px;
+}
+.picker-data-active {
+    display: block;
+    transition: 0.5s;
+}
+
+
 .color-white {
     color: white;
 }
@@ -29,61 +86,33 @@ body {
 .color-theme-second {
     color: #A811A8;
 }
-.carousel {
-    width: 100%;
+.color-black {
+    color: black;
 }
-.carousel-inner {
-    width: 100%;
+.bgcolor-white {
+    background-color: white;
 }
-.carousel-item-1 {
-    background: url("../img/carousel-1.jpg");
-    
+.bgcolor-black {
+    background-color: black;
 }
-.carousel-item-2 {
-    background: url("../img/carousel-2.jpg");
-}
-.carousel-item-3 {
-    background: blue;
-}
-.carousel-item {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 0;
+@media (min-width: 1000px) {
+   
+.lg-px-50 {
+    padding: 0 50px 0 50px;
 }
 
 
-.carousel-caption {
-    display: block;
-    background: rgba(0, 0, 0, 0.8);
-    transition: 0.3s;
-    cursor: pointer;
-    width: min-content;
-    white-space: nowrap;
-    padding: 30px;
-    margin: 0 auto 0 auto;
-    text-align: left;
+
+
 }
-.carousel-caption h3{
-    margin-bottom: 20px;
-}
-.carousel-caption:hover {
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
-    background: rgba(0, 0, 0, 0.9);
-    color: white;
-    text-decoration: none;
-    
-}
-.carousel-caption:active {
-    color: #F5C725;
-}
-.carousel-control-prev {
-    position: absolute;
-}
+
+
+
+
+
 
 @media (max-width: 1000px) {
+   
     .carousel-caption {
         left: 0;
         width: 100%;
@@ -101,7 +130,8 @@ body {
     }
     .carousel-caption li {
         white-space: normal;
-    }
-        
+    } 
+   
         
 }
+
